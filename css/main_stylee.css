@@ -1,0 +1,109 @@
+/* start globel rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box ;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small screen */
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+/* end globel rules */
+/* start landing */
+.landing {
+    display: flex;
+color: white;
+height: 100vh;
+align-items: center;
+}
+
+
+.landing .container .sign_name h1{
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 90px;
+    margin: 0;
+}
+
+.landing .container .sign_name h1::before{
+    position: absolute;
+    content: "hi , i' am";
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.landing .container .sign_name .postion{
+    text-transform: capitalize;
+    color: rgb(138, 2, 2);
+    font-weight: bold;
+}
+
+.landing .container .icons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(150px , 1fr));
+    gap: 10px;
+}
+
+.landing .container .icons div {
+    display: flex;
+    background-color: rgba(22, 22, 22, 0.822);
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.landing .container .icons div p{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.landing .container .social{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(35px , 1fr));
+    gap: 2px;
+}
+.landing .container .social>i{
+    display: flex;
+    background-color: rgba(22, 22, 22, 0.822);
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    border-radius: 5px;
+    color: #777;
+}
+/* end landing */
