@@ -1,103 +1,138 @@
 /* start globel rules */
-*{
+* {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Cairo', sans-serif;
     background-color: black;
     color: white;
 }
 
-.container{
+
+.container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* small screen */
-@media (min-width:768px){
-    .container{
-        width:750px;
+@media (min-width:768px) {
+    .container {
+        width: 750px;
     }
 }
+
 /* medium screen */
-@media (min-width:992px){
-    .container{
-        width:970px;
+@media (min-width:992px) {
+    .container {
+        width: 970px;
     }
 }
 
 /* large screen */
-@media (min-width:1200px){
-    .container{
-        width:1170px;
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
     }
 }
+
 /* end globel rules */
 /* start landing */
 .landing {
     display: flex;
-color: white;
-height: 100vh;
-align-items: center;
+    color: white;
+    height: 100vh;
+    align-items: center;
+    background-image: url(../images/landing_5\ \(1\).jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 77vh;
+    background-position-y: 24%;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-
-.landing .container .sign_name h1{
+.landing .container .sign_name h1 {
     position: relative;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 90px;
+    font-size: 6vw;
     margin: 0;
 }
 
-.landing .container .sign_name h1::before{
+.landing .container .sign_name h1::before {
     position: absolute;
-    content: "hi , i' am";
-    font-size: 16px;
+    content: "hi, i' am";
+    font-size: 20px;
     font-weight: normal;
+    text-transform: capitalize;
+    left: 15px;
+    top: -15px;
 }
 
-.landing .container .sign_name .postion{
+.landing .container .sign_name .postion {
     text-transform: capitalize;
     color: rgb(138, 2, 2);
     font-weight: bold;
+    padding-bottom: 40px;
 }
 
-.landing .container .icons{
+
+.landing .container .icons {
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(150px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 .landing .container .icons div {
     display: flex;
     background-color: rgba(22, 22, 22, 0.822);
     justify-content: center;
-    height: 150px;
+    height: 120px;
     align-items: center;
     border-radius: 5px;
     flex-direction: column;
 }
 
-.landing .container .icons div p{
+.landing .container .icons div p {
     text-transform: uppercase;
     font-size: 12px;
+    line-height: 1.8;
 }
-.landing .container .social{
+
+.landing .container .level {
+    height: 4px;
+    background-color: rgba(22, 22, 22, 0.822);
+    width: 37%;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.landing .container .level span {
+    display: flex;
+    background-color: #8a0202;
+    height: 100%;
+
+}
+
+.landing .container .social {
     display: grid;
-    grid-template-columns: repeat(auto-fill , minmax(35px , 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
     gap: 2px;
 }
-.landing .container .social>i{
+
+.landing .container .social>i {
     display: flex;
     background-color: rgba(22, 22, 22, 0.822);
     justify-content: center;
@@ -106,4 +141,47 @@ align-items: center;
     border-radius: 5px;
     color: #777;
 }
+
+@media (max-width:767px) {
+    .landing {
+        background-position: 0;
+
+    }
+
+    .landing .container {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .landing .container .sign_name .postion {
+        padding-bottom: 20px;
+    }
+
+    .landing .container .level {
+        width: 100%;
+    }
+
+    .landing .container .sign_name h1 {
+        color: linear-gradient(to right, white 60%, #8a0202 60%, #8a0202 100%);
+    }
+
+    .landing .container .sign_name h1::before {
+        left: 0;
+        top: -20px;
+    }
+
+    .landing .container .sign_name h1 span {
+        color: #8a0202;
+    }
+
+    .landing .container .icons div p {
+        color: #8a0202;
+        font-weight: bold;
+    }
+
+    .landing .container .level {
+        margin-bottom: 20px;
+    }
+}
+
 /* end landing */
