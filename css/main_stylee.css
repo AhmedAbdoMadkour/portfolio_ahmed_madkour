@@ -25,6 +25,19 @@ body {
     margin-right: auto;
 }
 
+
+/* START COMPONENT */
+/* END COMPONENT */
+.main_tital {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 2em;
+    padding-top: 50px;
+    padding-right: 0;
+}
+
 /* small screen */
 @media (min-width:768px) {
     .container {
@@ -185,3 +198,104 @@ body {
 }
 
 /* end landing */
+/* start over landing */
+.over_landing {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-image: url(../images/over_landing.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* end over landing */
+/* START SEVICES */
+.services {
+    position: relative;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+
+}
+
+.services .container .box_service {
+    background-color: #8a0202;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .container .box_service:nth-of-type(2) {
+    background-image: url(../images/services.jpg);
+}
+
+.services .container .box_service i {
+    /* padding: 40px; */
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    color: crimson
+}
+
+.services .container .box_service:nth-of-type(2) i {
+    background-color: crimson;
+    color: white;
+}
+
+.services .container .box_service h3 {
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.services .container .box_service p {
+    line-height: 1.6;
+    color: black;
+}
+
+
+.services .my_customers {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services .my_customers h3 {
+    font-size: 30px;
+    padding: 30px 0;
+}
+
+.services .my_customers h3 span {
+    color: #8a0202;
+}
+
+
+.services .my_customers p {
+    color: #777;
+    padding: 0 40px;
+}
+
+.services .my_customers a {
+    position: absolute;
+    color: black;
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+/* END SERVICES */
